@@ -92,7 +92,7 @@ namespace Nominatim.API.Models {
         /// <summary>
         ///     District Name
         /// </summary>
-        [JsonProperty("state_district")]
+        [JsonProperty("district")]
         public string District { get; set; }
 
         /// <summary>
