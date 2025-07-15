@@ -48,5 +48,5 @@ jobs:
     #   run: dotnet test --no-build --verbosity normal
     - name: Push
       if: ${{ inputs.has_tags }} 
-      run: dotnet nuget push ${{env.DOTNET_ROOT}}/app/*.nupkg -k ${{ vars.MYGET_API_KEY }} -s https://www.myget.org/F/kmnet/api/v2/package
+      run: dotnet nuget push ${{env.DOTNET_ROOT}}/app/*.nupkg -k ${{ vars.MYGET_API_KEY }} -s ${{ vars.MYGET_URL }}
 
